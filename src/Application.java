@@ -1,6 +1,3 @@
-import java.math.BigDecimal;
-import java.util.HashMap;
-
 // Implementa o algoritmo Graus de Separação, através de caminhamento
 // em largura (BFS) num grafo não dirigido
 public class Application {
