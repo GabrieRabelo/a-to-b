@@ -1,5 +1,4 @@
 public class Maze {
-    private int[][] maze;
     private int width, heigth;
     private final int[] hero = new int[2];
     private final int[] villain = new int[2];
@@ -15,7 +14,7 @@ public class Maze {
         }
         arq.close();
 
-        maze = new int[width][heigth];
+        int[][] maze = new int[width][heigth];
 
         arq = new In(filename);
 
@@ -48,10 +47,11 @@ public class Maze {
         }
         arq.close();
 
-        createGraph();
+        //createGraph(maze);
+        //printMaze(maze);
     }
 
-    public void createGraph() {
+    public void createGraph(int [][] maze) {
         graph = new Graph(width*heigth);
 
         for(int y = 1; y<width-1;y++){
@@ -68,7 +68,7 @@ public class Maze {
         }
     }
 
-    public void printMaze() {
+    public void printMaze(int[][] maze) {
         for(int i = 0; i< heigth; i++) {
             for(int j = 0; j<width;j++) {
                 System.out.print(maze[i][j] + " ");

@@ -4,11 +4,9 @@ public class Application {
     public static void main(String[] args) {
 
         long startTime = System.currentTimeMillis();
-        final String FILE_NAME= "caso1_cohen.txt";
+        final String FILE_NAME= "caso7_cohen.txt";
 
         Maze maze = new Maze(FILE_NAME);
-
-        maze.printMaze();
 
         long endTime = System.currentTimeMillis();
         System.out.println(endTime-startTime + "ms");
