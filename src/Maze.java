@@ -103,4 +103,8 @@ public class Maze {
         return height;
     }
 
+    public Graph getGraph() {
+        return graph;
+    }
+
 }
