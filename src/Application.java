@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
 
         long startTime = System.currentTimeMillis();
-        final String FILE_NAME= "caso6_cohen.txt";
+        final String FILE_NAME= "caso1_cohen.txt";
 
         Maze maze = new Maze(FILE_NAME);
 
